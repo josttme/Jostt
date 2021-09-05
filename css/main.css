@@ -175,13 +175,13 @@ main {
 .homecontainer {
   width: 100vw;
   height: auto;
-  background-color: #000019;
+  /* background-color: $color-primario; */
   background-position: center;
 }
 
 .homecontainer_photogradient {
   position: relative;
-  background-image: url("../../../images/images-nav/puerto.jpeg");
+  background-image: url("https://ucd10132536f011a93e4ff9d26fe.previews.dropboxusercontent.com/p/thumb/ABQPZZsOurikT366kG0k8VelTgAkKZsEMbd9HNbMazahvzJex0_uCKZfB3cdd0lgbu5c1NTbgu2bQqJ1NccUn8IDHlmV8v02sd62lkJM7KG_bfbox3hr_nB82URFY57QFdrUSbAy5RqJwAzfSVCOMvSj9W7JiTEMEYIUxwmQgo8IrGfZBB_vykBuw5llql-sabW9hrkoZc-V1Lk7GfKVOalOaW3pLfr4xT2R-OiW4Mc2cB72m43jGezPdBM47k49O4ypD18G_UZjnnilxXyfIFJhXbf9DgMp8MneoQQcmul2Hon_GgDDSYjOhOdu5M29CX-VwmWjr6Wijt9vIqoI1jQfoKBNQEBi7BkazIHjU9cKmRD9PnxE6PkewI5AwiOxplApBEAcSO6n343rX68_2Hct/p.jpeg?fv_content=true&size_mode=5");
   background-repeat: no-repeat;
   background-size: auto 100%;
   width: 100%;
@@ -308,6 +308,11 @@ main {
 @media (min-width: 360px) {
   .menuContainer {
     padding-top: 5rem;
+  }
+  .social_center a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
