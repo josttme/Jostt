@@ -1,0 +1,210 @@
+.menuContainer {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: $color-primario;
+  transition-duration: 0.6s;
+  left: 0;
+  z-index: 110;
+  &_fotoNombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 2rem;
+    text-decoration: none;
+    & img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100%;
+    }
+    & h2 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      color: $color-text;
+    }
+  }
+  &_nav {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: $colormenu;
+    & a {
+      display: grid;
+      grid-template-columns: 25% auto;
+      color: $color-text;
+      text-decoration: none;
+      padding: 1rem 1rem;
+      & span {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+      }
+      & i {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      &:hover {
+        background-color: $color-nav-hover;
+        color: $color-secundary;
+      }
+    }
+  }
+  /*  & .navhidde {
+    transition: 5s;
+  } */
+  &.navhidde {
+    left: -80%;
+    visibility: hidden;
+  }
+}
+
+main {
+  background: rgb(0, 0, 33);
+  background: rgb(0, 71, 85);
+  background: linear-gradient(86deg, rgba(0, 71, 85, 1) 0%, rgba(0, 116, 139, 1) 50%, rgba(0, 71, 85, 1) 100%);
+  padding: 0 0 5rem;
+}
+
+// burger
+.burgerContainer {
+  /* display: none; */
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 110;
+  &_burger {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.13);
+    /* background: rgba(0, 143, 173, .13); */
+    & span {
+      width: 30px;
+      height: 4px;
+      background-color: #000019;
+      border-radius: 9px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+    &.open span:nth-child(1) {
+      width: 0%;
+    }
+    &.open span:nth-child(2) {
+      position: relative;
+      top: 3px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.open span:nth-child(3) {
+      bottom: 3px;
+      position: relative;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &.open span:nth-child(4) {
+      width: 0%;
+    }
+  }
+}
+
+//  Home
+.homecontainer {
+  width: 100vw;
+  height: auto;
+  background-color: $color-primario;
+  background-position: center;
+  &_photogradient {
+    position: relative;
+    background-image: url('../../../images/images-nav/puerto.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100vh;
+    background-position: calc(100% - 30%);
+    object-fit: cover;
+    &_gradient {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background: rgb(0, 0, 25);
+      background: linear-gradient(90deg, rgba(0, 0, 25, 0) 0%, rgba(0, 0, 25, 0.9136029411764706) 90%, rgba(0, 0, 25, 1) 100%);
+    }
+    &__oscuro {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 100;
+    }
+  }
+  &_nombrehome {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: auto;
+    & span,
+    & h1 {
+      display: inline-block;
+      padding: 10px;
+      font-size: 4rem;
+      font-weight: 700;
+      font-family: "Nunito", sans-serif;
+      background: linear-gradient(90deg, rgba(0, 53, 187, 1) 27%, rgba(0, 24, 180, 1) 44%, rgba(3, 10, 163, 1) 65%, rgba(0, 53, 187, 1) 91%);
+      background-size: 200% auto;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 1.8s linear infinite;
+      -webkit-text-stroke: .9px #000019;
+    }
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+    & span {
+      font-weight: 800;
+    }
+    & h1 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.blogscotainer {
+  width: 90%;
+  height: 100px;
+  margin: 10rem auto;
+  background-color: rgba(0, 0, 25, 1);
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.35);
+  & span {
+    font-size: 1.5rem;
+    color: $color-text;
+  }
+}
