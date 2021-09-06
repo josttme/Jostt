@@ -50,7 +50,7 @@ transition: 5s;
 .menuContainer_fotoNombre h2 {
   font-size: 2rem;
   margin-top: 1.5rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .menuContainer_nav {
@@ -76,7 +76,7 @@ transition: 5s;
   display: grid;
   -ms-grid-columns: 20% 1fr 25%;
       grid-template-columns: 20% 1fr 25%;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   padding: 1rem 1rem;
 }
@@ -174,7 +174,7 @@ main {
 
 .homecontainer {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   /* background-color: $color-primario; */
   background-position: center;
 }
@@ -185,22 +185,13 @@ main {
   background-repeat: no-repeat;
   background-size: auto 100%;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: calc(100% - 30%);
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.homecontainer_photogradient_gradient {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45%;
-  height: 100%;
-  background: #000019;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 25, 0)), color-stop(90%, rgba(0, 0, 25, 0.913603)), to(#000019));
-  background: linear-gradient(90deg, rgba(0, 0, 25, 0) 0%, rgba(0, 0, 25, 0.913603) 90%, #000019 100%);
+  /*   &_gradient {
+      display: none;
+    } */
 }
 
 .homecontainer_photogradient__oscuro {
@@ -215,7 +206,7 @@ main {
 
 .homecontainer_nombrehome {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 20%;
   width: auto;
 }
@@ -226,8 +217,8 @@ main {
   font-size: 3rem;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
-  background: -webkit-gradient(linear, left top, right top, color-stop(27%, #0035bb), color-stop(44%, #0018b4), color-stop(65%, #030aa3), color-stop(91%, #0035bb));
-  background: linear-gradient(90deg, #0035bb 27%, #0018b4 44%, #030aa3 65%, #0035bb 91%);
+  background: linear-gradient(86deg, #0085b8 0%, #0045c6 41%, #0045c6 63%, #0085b8 100%);
+  /*       background: linear-gradient(90deg, rgba(0, 53, 187, 1) 27%, rgba(0, 24, 180, 1) 44%, rgba(3, 10, 163, 1) 65%, rgba(0, 53, 187, 1) 91%); */
   background-size: 200% auto;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -258,7 +249,7 @@ main {
 }
 
 .social {
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   right: auto;
   width: 80%;
@@ -284,7 +275,7 @@ main {
 .social a {
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -294,7 +285,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(255, 255, 255, 0.13);
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   border-radius: 100%;
   text-decoration: none;
   margin: 0 .8rem;
@@ -313,6 +304,92 @@ main {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .menuContainer_fotoNombre {
+    padding: 4rem 0 5rem;
+  }
+  .menuContainer img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .menuContainer h2 {
+    font-size: 2.2rem;
+  }
+  .menuContainer_nav {
+    width: 60%;
+    margin-top: 3rem;
+  }
+  .menuContainer_nav-encendido a,
+  .menuContainer_nav-apagado a {
+    padding: 1rem 1rem;
+  }
+  .menuContainer_nav-encendido a span,
+  .menuContainer_nav-apagado a span {
+    font-size: 1.7rem;
+  }
+  .menuContainer_nav-encendido a i,
+  .menuContainer_nav-apagado a i {
+    font-size: 1.9rem;
+  }
+  .social_center a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+  }
+  .homecontainer_nombrehome span,
+  .homecontainer_nombrehome h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menuContainer {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    left: 0;
+  }
+  .menuContainer.navhidde {
+    left: 0;
+    visibility: visible;
+  }
+  .burgerContainer {
+    display: none;
+  }
+  .homecontainer {
+    width: 80%;
+    margin-left: 20%;
+    background-color: #000019;
+  }
+  .homecontainer_photogradient {
+    background-image: url("../../images/elon.jpg");
+    background-size: 100% auto;
+    width: 70%;
+    background-position: calc(100% - 30%);
+  }
+  .homecontainer_photogradient__gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-color: #000019;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 25, 0)), color-stop(90%, rgba(0, 0, 25, 0.913603)), to(#000019));
+    background: linear-gradient(90deg, rgba(0, 0, 25, 0) 0%, rgba(0, 0, 25, 0.913603) 90%, #000019 100%);
+  }
+  .homecontainer_nombrehome {
+    top: 55%;
+    left: 35%;
+    width: auto;
+  }
+  .homecontainer_nombrehome span,
+  .homecontainer_nombrehome h1 {
+    font-size: 4rem;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=main.css.map */
