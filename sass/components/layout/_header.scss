@@ -14,7 +14,12 @@
     align-items: center;
     padding: 6rem 0 2rem;
     text-decoration: none;
-    & img {
+    &_img {
+      background-image: url('https://dl.dropboxusercontent.com/s/411lf2pefbdb1py/josttme_comp.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: cover;
       width: 6rem;
       height: 6rem;
       border-radius: 100%;
@@ -160,6 +165,7 @@ main {
     top: 55%;
     left: 20%;
     width: auto;
+    z-index: 107;
     & span,
     & h1 {
       display: inline-block;
