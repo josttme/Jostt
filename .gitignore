@@ -1,3 +1,4 @@
-css
-javascript
-images
+*min.css
+*css.map
+/javascript/
+/images/

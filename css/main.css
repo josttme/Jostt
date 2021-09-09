@@ -311,12 +311,13 @@ main {
   background: #004755;
   background: linear-gradient(86deg, #004755 0%, #00748b 50%, #004755 100%);
   padding: 0 0 5rem;
+  overflow: hidden;
 }
 
 .containermain_blogscotainer {
   width: 90%;
   height: 100px;
-  margin: 0 auto;
+  margin: 10rem auto;
   background-color: #000019;
   border-radius: 4px;
   padding: 1rem;
