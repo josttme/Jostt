@@ -134,6 +134,7 @@ main {
 
 //  Home
 .homecontainer {
+  position: relative;
   width: 100vw;
   height: 100vh;
   /* background-color: $color-primario; */
@@ -230,8 +231,7 @@ main {
 }
 
 .containermain {
-  width: 80%;
-  margin-left: 20%;
+  width: 100%;
   height: 500px;
   background: rgb(0, 0, 33);
   background: rgb(0, 71, 85);
