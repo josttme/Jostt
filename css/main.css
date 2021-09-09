@@ -226,13 +226,13 @@ main {
   font-family: "Nunito", sans-serif;
   background: linear-gradient(86deg, #0085b8 0%, #0045c6 41%, #0045c6 63%, #0085b8 100%);
   /*       background: linear-gradient(90deg, rgba(0, 53, 187, 1) 27%, rgba(0, 24, 180, 1) 44%, rgba(3, 10, 163, 1) 65%, rgba(0, 53, 187, 1) 91%); */
+  -webkit-background-clip: text;
+  background-clip: text;
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .9px #000019;
   -webkit-animation: textclip 1.8s linear infinite;
           animation: textclip 1.8s linear infinite;
-  -webkit-text-stroke: .9px #000019;
 }
 
 @-webkit-keyframes textclip {
