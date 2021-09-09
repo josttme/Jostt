@@ -227,7 +227,7 @@ main {
   background: linear-gradient(86deg, #0085b8 0%, #0045c6 41%, #0045c6 63%, #0085b8 100%);
   /*       background: linear-gradient(90deg, rgba(0, 53, 187, 1) 27%, rgba(0, 24, 180, 1) 44%, rgba(3, 10, 163, 1) 65%, rgba(0, 53, 187, 1) 91%); */
   background-size: 200% auto;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: textclip 1.8s linear infinite;
