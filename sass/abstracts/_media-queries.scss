@@ -115,10 +115,13 @@
       }
     }
   }
-  .social_center a {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
+  .social_center {
+    margin: 0 0 0 20px;
+    & a {
+      width: 3rem;
+      height: 3rem;
+      font-size: 2rem;
+    }
   }
 }
 
